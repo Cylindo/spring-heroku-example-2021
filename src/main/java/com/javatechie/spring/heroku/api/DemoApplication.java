@@ -14,7 +14,7 @@ public class DemoApplication {
 	};
 
 	@GetMapping("/message/{input}")
-	public String getMessage() {
+	public String getMessage(@PathVariable String input) {
 		return "Welcome" + input;
 	};
 	public static void main(String[] args) {
